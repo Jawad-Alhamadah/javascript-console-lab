@@ -2,7 +2,10 @@
 // Pre answers 
 
 let yellow ="\x1b[33m";
-let reset = "\x1b[0m "
+let reset = "\x1b[0m"
+let green = "\x1b[32m"
+
+ 
 //Question one-- Area of a rectangle
 
 let rectWidth = 15 
@@ -55,7 +58,7 @@ let tip = bill* 0.15
 
 let total = tip + bill
 
-console.log(`the total of the bill ${yellow} (${bill})${reset}${reset}with tip ${yellow}(${tip})${reset}${reset}is: ${total}${reset}\n `)
+console.log(`the total of the bill ${yellow}(${bill})${reset} with tip ${yellow}(${tip})${reset}is: ${total}${reset}\n `)
 
 
 //Question 5 - Total Bill
@@ -65,7 +68,7 @@ var adjective1 = "amazing";
 var adjective2 = "fun";
 var adjective3 = "entertaining";
 
-let madLib = `The Intro to JavaScript course is \x1b[32m ${adjective1}\x1b[0m. James and Julia are so  \x1b[32m${adjective2}\x1b[0m. I cannot wait to work through the rest of this  \x1b[32m ${adjective3}${reset}content! \n`
+let madLib = `The Intro to JavaScript course is ${green}${adjective1}${reset}. James and Julia are so ${green}${adjective2}${reset}. I cannot wait to work through the rest of this ${green}${adjective3}${reset} content! \n`
 
 console.log(madLib)
 
@@ -76,7 +79,7 @@ console.log(madLib)
 let firstName = "Jawad"
 let interest = " Robotics"
 let hobby = "Paint"
-let awesomeMessage = `Hi, my name is \x1b[32m ${firstName}\x1b[0m. I love \x1b[32m ${interest}\x1b[0m. In my spare time, I like to \x1b[32m ${hobby}\x1b[0m.`
+let awesomeMessage = `Hi, my name is ${green}${firstName}${reset}. I love${green}${interest}${reset}. In my spare time, I like to ${green}${hobby}${reset}.`
 
 console.log(awesomeMessage)
 
