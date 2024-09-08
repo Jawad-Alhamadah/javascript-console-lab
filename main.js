@@ -1,10 +1,14 @@
  
+// Pre answers 
+
+let yellow ="\x1b[33m";
+let reset = "\x1b[0m "
 //Question one-- Area of a rectangle
 
 let rectWidth = 15 
 let rectHeight = 25;
 let area = rectHeight * rectWidth
-console.log ( `The area of the rectangle is: \x1b[33m${area} \n`)
+console.log ( `The area of the rectangle is: ${yellow}${area} \n`)
 
 //Question one-- Area of a rectangle                 -----------end
 
@@ -14,10 +18,10 @@ console.log ( `The area of the rectangle is: \x1b[33m${area} \n`)
 let tempInC = 30;
 let tempInF = ( ( tempInC *( 9.0/5.0 ) ) +32)
 
-console.log(` \x1b[33m${tempInC}°C\x1b[0m is  \x1b[33m${tempInF}°F\x1b[0m `)
+console.log(` ${yellow} ${tempInC}°C${reset}is  ${yellow}${tempInF}°F${reset}`)
 
 tempInC = (tempInF - 32) * (5.0/9.0)
-console.log( ` \x1b[33m${tempInF}°F\x1b[0m is  \x1b[33m${tempInC}°C\x1b[0m \n`)
+console.log( ` ${yellow}${tempInF}°F${reset}is  ${yellow}${tempInC}°C${reset}\n`)
 
 //Question Two-- Temprature               -----------end
 
@@ -29,7 +33,7 @@ console.log( ` \x1b[33m${tempInF}°F\x1b[0m is  \x1b[33m${tempInC}°C\x1b[0m \n`
 
 let hours = 2.0
 let seconds = (hours * 60.0) * 60.0
-console.log(`${hours} Hours =  ${seconds}\x1b[0m Seconds \n`)
+console.log(`${hours} Hours =  ${seconds}${reset}Seconds \n`)
 
 //Question Three - hours to seconds  -----------end
 
@@ -51,7 +55,7 @@ let tip = bill* 0.15
 
 let total = tip + bill
 
-console.log(`the total of the bill \x1b[33m (${bill})\x1b[0m \x1b[0m with tip \x1b[33m(${tip})\x1b[0m \x1b[0m is: ${total}\x1b[0m \n `)
+console.log(`the total of the bill ${yellow} (${bill})${reset}${reset}with tip ${yellow}(${tip})${reset}${reset}is: ${total}${reset}\n `)
 
 
 //Question 5 - Total Bill
@@ -61,7 +65,7 @@ var adjective1 = "amazing";
 var adjective2 = "fun";
 var adjective3 = "entertaining";
 
-let madLib = `The Intro to JavaScript course is \x1b[32m ${adjective1}\x1b[0m. James and Julia are so  \x1b[32m${adjective2}\x1b[0m. I cannot wait to work through the rest of this  \x1b[32m ${adjective3}\x1b[0m content! \n`
+let madLib = `The Intro to JavaScript course is \x1b[32m ${adjective1}\x1b[0m. James and Julia are so  \x1b[32m${adjective2}\x1b[0m. I cannot wait to work through the rest of this  \x1b[32m ${adjective3}${reset}content! \n`
 
 console.log(madLib)
 
