@@ -18,7 +18,7 @@ console.log ( `The area of the rectangle is: ${yellow}${area} \n`)
 let tempInC = 30;
 let tempInF = ( ( tempInC *( 9.0/5.0 ) ) +32)
 
-console.log(` ${yellow} ${tempInC}°C${reset}is  ${yellow}${tempInF}°F${reset}`)
+console.log(`${yellow} ${tempInC}°C${reset}is  ${yellow}${tempInF}°F${reset}`)
 
 tempInC = (tempInF - 32) * (5.0/9.0)
 console.log( ` ${yellow}${tempInF}°F${reset}is  ${yellow}${tempInC}°C${reset}\n`)
@@ -33,7 +33,7 @@ console.log( ` ${yellow}${tempInF}°F${reset}is  ${yellow}${tempInC}°C${reset}\
 
 let hours = 2.0
 let seconds = (hours * 60.0) * 60.0
-console.log(`${hours} Hours =  ${seconds}${reset}Seconds \n`)
+console.log(`${yellow}${hours}${reset}Hours =${yellow}${seconds}${reset}Seconds\n`)
 
 //Question Three - hours to seconds  -----------end
 
@@ -44,7 +44,7 @@ console.log(`${hours} Hours =  ${seconds}${reset}Seconds \n`)
 let thingOne = "thingOne";
 let thingTwo = "thingTwo";
 
-console.log(thingOne.concat(thingTwo));
+console.log(thingOne.concat(thingTwo) +"\n");
 
 //Question 4 -- Join two strings -----------end
 
